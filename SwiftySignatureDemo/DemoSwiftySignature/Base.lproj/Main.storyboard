@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D17a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoSwiftySignature" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZR0-47-1k0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ultrices orci, non condimentum dui. Curabitur a lorem ac mauris pellentesque faucibus. Nullam feugiat ultricies malesuada. In hac habitasse platea dictumst. Fusce eleifend nunc eu scelerisque maximus. Phasellus sed ex ut enim mollis bibendum. Phasellus tincidunt consectetur faucibus.
+
+Aenean quis dapibus lectus. Integer pretium lacinia auctor. Nam nisi dolor, efficitur at augue quis, dictum ultrices ipsum. Maecenas felis magna, tristique nec ante at, accumsan imperdiet sapien. Ut maximus, leo non efficitur posuere, magna eros eleifend ipsum, sit amet dictum augue orci a augue. Proin fermentum ipsum nec nisi pellentesque, vitae condimentum orci placerat. Vestibulum fringilla, nulla sed tristique facilisis, mi ante ultricies augue, ut faucibus nibh neque aliquet arcu. Nullam molestie dui turpis, dignissim pulvinar ante faucibus eget. Proin ut elementum arcu, sit amet rutrum sapien. Duis at nulla elit. Sed elementum dui in ipsum viverra, eget lobortis elit finibus. Nunc laoreet velit vel pretium rhoncus.
+
+dolor felis, feugiat rutrum nulla auctor sit amet. Sed egestas sed velit in malesuada. Cras suscipit nisl sit amet ante vehicula venenatis. Fusce eu nibh libero. Integer efficitur lacus ac elit lobortis, eget dictum dolor commodo. Quisque eget tincidunt ex, at consequat tortor.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NcU-Cm-lrh">
+                                <rect key="frame" x="16" y="620" width="284" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Johnny Appleseed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3t-ed-nAQ">
+                                <rect key="frame" x="16" y="629" width="284" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mk7-L1-WGe">
+                                <rect key="frame" x="322" y="605" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="CaptureSignatureButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lte-Vj-NDV"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aet-yA-eRP" customClass="SignatureView" customModule="DemoSwiftySignature" customModuleProvider="target">
+                                <rect key="frame" x="16" y="510" width="284" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NcU-Cm-lrh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0kc-Ft-cFu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NcU-Cm-lrh" secondAttribute="trailing" constant="59" id="34i-pV-ci9"/>
+                            <constraint firstAttribute="trailing" secondItem="ZR0-47-1k0" secondAttribute="trailing" id="Ahp-IP-1rr"/>
+                            <constraint firstItem="mk7-L1-WGe" firstAttribute="top" secondItem="ZR0-47-1k0" secondAttribute="bottom" constant="52" id="Nb4-Vx-fAv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A3t-ed-nAQ" secondAttribute="bottom" constant="17" id="P39-cy-wmH"/>
+                            <constraint firstItem="ZR0-47-1k0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="R42-94-qDp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mk7-L1-WGe" secondAttribute="bottom" constant="32" id="Sdr-eU-ld2"/>
+                            <constraint firstItem="A3t-ed-nAQ" firstAttribute="top" secondItem="NcU-Cm-lrh" secondAttribute="bottom" constant="8" symbolic="YES" id="WdQ-hT-0mK"/>
+                            <constraint firstItem="mk7-L1-WGe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hHv-OC-x26"/>
+                            <constraint firstItem="ZR0-47-1k0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qqu-hc-rMI"/>
+                            <constraint firstItem="NcU-Cm-lrh" firstAttribute="leading" secondItem="A3t-ed-nAQ" secondAttribute="leading" id="rjj-Lh-lzq"/>
+                            <constraint firstItem="NcU-Cm-lrh" firstAttribute="centerY" secondItem="mk7-L1-WGe" secondAttribute="centerY" id="sBr-UB-CE3"/>
+                            <constraint firstItem="NcU-Cm-lrh" firstAttribute="trailing" secondItem="A3t-ed-nAQ" secondAttribute="trailing" id="sFI-Bx-d9b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signatureView" destination="aet-yA-eRP" id="gAK-ir-LZM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
