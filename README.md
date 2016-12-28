@@ -40,7 +40,11 @@ Using SwiftySignature is very simple:
 
 ### Getting Started:
 
-Simple create a new SignatureView either through interface builder, or through code:
+If you have installed via Cocoapods, you will need to import the module into your Swift file:
+
+     import SwiftySignature
+
+Create a SignatureView either through interface builder, or through code:
 
     let signatureView = SignatureView(frame: frame)
     self.view.addSubview(signatureView)
@@ -70,6 +74,7 @@ The SignatureView can be cleared entirely using the **clearCanvas** function:
 * **lineColor** - Signature stroke color. Accepts any UIColor. Default is black
 * **lineWidth** - Signature stroke width. Accepts any positive CGFloat. Default is 3.0
 * **lineOpacity** - Signature stroke opacity. Accepts a CGFloat between 0.0 and 1.0
+* **drawingEnabled** - Sets whether or not swipe gestures will be drawn onto the view. Default is true
 * **signaturePresent** (get-only) - Returns whether a signature is present or not. 
 * **signatureIsOpaque** - Sets whether or not the Signature image is on an opaque, white, background or transparent
     
