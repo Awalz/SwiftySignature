@@ -9,7 +9,7 @@
 
 ## Overview
 
-SwiftySignature is a a lightweight signature capturing framework written in Swift. SwiftySignature utilizeds the [SwiftyDraw](https://github.com/Awalz/SwiftyDraw) drawing framework to get accurate, smooth drawings. 
+SwiftySignature is a lightweight signature capturing framework written in Swift. SwiftySignature utilizeds the [SwiftyDraw](https://github.com/Awalz/SwiftyDraw) drawing framework to get accurate, smooth drawings. 
 
 ## Requirements
 * iOS 8.0+
