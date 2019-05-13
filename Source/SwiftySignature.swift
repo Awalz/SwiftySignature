@@ -131,7 +131,7 @@ open class SignatureView: UIView {
         }
         
         delegate?.SignatureViewDidBeginDrawing(view: self)
-        if let touch = touches.first as UITouch! {
+        if let touch = touches.first {
             setTouchPoints(touch, view: self)
             let newLine = Line(path: CGMutablePath(), color: lineColor, width: lineWidth, opacity: lineOpacity)
             newLine.path.addPath(createNewPath())
@@ -145,7 +145,7 @@ open class SignatureView: UIView {
         }
         
         delegate?.SignatureViewIsDrawing(view: self)
-        if let touch = touches.first as UITouch! {
+        if let touch = touches.first {
             updateTouchPoints(touch, view: self)
             let newLine = createNewPath()
             if let currentPath = pathArray.last {
